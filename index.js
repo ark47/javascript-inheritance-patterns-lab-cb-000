@@ -89,3 +89,4 @@ Rectangle.prototype.constructor = Rectangle;
 Rectangle.prototype.area = function() {
   return this.w * this.h;
 };
+
