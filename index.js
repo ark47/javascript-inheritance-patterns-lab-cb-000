@@ -90,3 +90,7 @@ Rectangle.prototype.area = function() {
   return this.width * this.height;
 };
 
+function Square(length) {
+  Rectangle.call(this, length, length);
+  this.length = length
+}
