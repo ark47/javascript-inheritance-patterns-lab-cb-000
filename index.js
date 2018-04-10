@@ -92,5 +92,9 @@ Rectangle.prototype.area = function() {
 
 function Square(length) {
   Rectangle.call(this, length, length);
-  this.length = length
+  this.length = length;
 }
+
+Square.prototype = Object.create(Rectangle.prototype);
+Square.prototype.constructor = Square;
+
