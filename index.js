@@ -69,3 +69,7 @@ function Triangle(side1, side2, side3) {
 
 Triangle.prototype = Object.create(Polygon.prototype);
 Triangle.prototype.constructor = Triangle;
+
+function Quadrilateral(side1, side2, side3, side4) {
+  Polygon.call(this, [new Side()])
+}
