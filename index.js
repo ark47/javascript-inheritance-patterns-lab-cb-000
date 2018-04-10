@@ -77,8 +77,8 @@ function Quadrilateral(side1, side2, side3, side4) {
 Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
-function Rectangle(w, h) {
-  Quadrilateral.call(this, w, h, w, h);
+function Rectangle(width, height) {
+  Quadrilateral.call(this, width, height, width, height);
   this.w = w;
   this.h = h;
 }
