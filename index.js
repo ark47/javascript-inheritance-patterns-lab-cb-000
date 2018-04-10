@@ -78,5 +78,14 @@ Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
 function Rectangle(w, h) {
-  
+  Quadrilateral.call(this, w, h, w, h);
+  this.w = w;
+  this.h = h;
 }
+
+Rectangle.prototype = Object.create(Quadrilateral.prototype);
+Rectangle.prototype.constructor = Rectangle;
+
+Rectangle.prototype.area = function() {
+  return this.w * this.h;
+};
